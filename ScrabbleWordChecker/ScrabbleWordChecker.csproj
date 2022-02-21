@@ -1,19 +1,48 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Company>PeacePlaneStudios</Company>
+		<Authors>Alexander Reeder</Authors>
+		<Version>1.0.0</Version>
+		<PackageProjectUrl>https://github.com/speedreeder/ScrabbleWordChecker</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/speedreeder/ScrabbleWordChecker.git</RepositoryUrl>
+		<PackageTags>scrabble;boggle;dictionary;</PackageTags>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Description>Tool to check words against the TWL and SOWPODS Scrabble dictionaries.</Description>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="sowpods.txt" />
-    <None Remove="twl06.txt" />
-  </ItemGroup>
+	<PropertyGroup>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="sowpods.txt" />
-    <EmbeddedResource Include="twl06.txt" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LICENSE.txt">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="sowpods.txt" />
+		<None Remove="twl06.txt" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="sowpods.txt" />
+		<EmbeddedResource Include="twl06.txt" />
+	</ItemGroup>
 
 </Project>
