@@ -1,4 +1,4 @@
-# CrusadexGenerator
+# ScrabbleWordChecker
 
 Tool for checking words against the SOWPODS (European) and TWL (US) Scrabble dictionaries.
 
