@@ -7,7 +7,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Company>PeacePlaneStudios</Company>
 		<Authors>Alexander Reeder</Authors>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<PackageProjectUrl>https://github.com/speedreeder/ScrabbleWordChecker</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/speedreeder/ScrabbleWordChecker.git</RepositoryUrl>
 		<PackageTags>scrabble;boggle;dictionary;</PackageTags>
